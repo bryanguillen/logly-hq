@@ -170,7 +170,7 @@
       <section class="py-8 md:py-10 text-center">
 
         <p class="text-base text-textsecondary mb-5 max-w-sm mx-auto leading-relaxed">
-          We're opening early access to a small group of solo coaches first. Spot is free during beta.
+          We're opening early access to a small group of solo coaches first.
         </p>
 
         <!-- Form — default state -->
@@ -237,8 +237,6 @@
       btn.textContent = 'Joining...';
 
       try {
-        // Replace YOUR_FORMSPREE_ID with your actual Formspree form ID
-        // Sign up free at formspree.io — takes 2 minutes
         const res = await fetch('https://formspree.io/f/xykdqavn', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
